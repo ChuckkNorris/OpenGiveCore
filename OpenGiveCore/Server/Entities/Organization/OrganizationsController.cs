@@ -4,16 +4,16 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
-namespace OpenGiveCore.Controllers
+namespace OpenGiveCore.Server.Entities.Organization
 {
     [Route("api/[controller]")]
-    public class ValuesController : Controller
+    public class OrganizationsController : Controller
     {
         // GET api/values
         [HttpGet]
         public IEnumerable<string> Get()
         {
-            return new string[] { "value1", "value2" };
+            return new string[] { "Hello", "From", "Api" };
         }
 
         // GET api/values/5
