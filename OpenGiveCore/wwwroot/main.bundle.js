@@ -1,14 +1,14 @@
 webpackJsonp([1,4],{
 
-/***/ 133:
+/***/ 145:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(44)();
+exports = module.exports = __webpack_require__(51)();
 // imports
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, ".app-toolbar-filler {\r\n    -webkit-box-flex: 1;\r\n        -ms-flex: 1 1 auto;\r\n            flex: 1 1 auto;\r\n}\r\n\r\n.example-card {\r\n    display: inline-block;\r\n    width: 400px;\r\n    margin: 15px;\r\n}\r\n\r\n.example-header-image {\r\n    background-image: url('https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAd2AAAAJGQ3MjMwZWU1LWU0MmItNGFiMS1iMzkyLTQ5N2U5NmU3MWE5NA.jpg'); background-size: cover;\r\n}", ""]);
 
 // exports
 
@@ -18,22 +18,22 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 135:
+/***/ 147:
 /***/ (function(module, exports) {
 
-module.exports = "<h1>\n  {{title}} Deploy From Internet\n</h1>\n\n<ul>\n    <li *ngFor=\"let org of organizations\">{{org}}</li>\n</ul>\n"
+module.exports = "<md-toolbar color=\"primary\">\r\n    OpenGive App\r\n    <span class=\"app-toolbar-filler\"></span>\r\n    <button md-button>My Portfolio</button>\r\n    <button md-button>Browse</button>\r\n    <button md-button>Settings</button>\r\n</md-toolbar>\n\n<md-card *ngFor=\"let org of organizations\" class=\"example-card\">\r\n    <md-card-header>\r\n        <div md-card-avatar class=\"example-header-image\"></div>\r\n        <md-card-title>{{org}}</md-card-title>\r\n        <md-card-subtitle>Organization</md-card-subtitle>\r\n    </md-card-header>\r\n    <img md-card-image src=\"http://nextlevel-va.com/wordpress/wp-content/uploads/2015/08/portfolio-image.jpg\">\r\n    <md-card-content>\r\n        <p>\r\n            API says hey\r\n        </p>\r\n    </md-card-content>\r\n    <md-card-actions>\r\n        <button md-button>LIKE</button>\r\n        <button md-button>SHARE</button>\r\n    </md-card-actions>\r\n</md-card>\n\n\n"
 
 /***/ }),
 
-/***/ 160:
+/***/ 199:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(71);
+module.exports = __webpack_require__(81);
 
 
 /***/ }),
 
-/***/ 47:
+/***/ 56:
 /***/ (function(module, exports) {
 
 function webpackEmptyContext(req) {
@@ -42,20 +42,20 @@ function webpackEmptyContext(req) {
 webpackEmptyContext.keys = function() { return []; };
 webpackEmptyContext.resolve = webpackEmptyContext;
 module.exports = webpackEmptyContext;
-webpackEmptyContext.id = 47;
+webpackEmptyContext.id = 56;
 
 
 /***/ }),
 
-/***/ 71:
+/***/ 81:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(76);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_module__ = __webpack_require__(78);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(79);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(87);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_module__ = __webpack_require__(90);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(91);
 
 
 
@@ -68,12 +68,12 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dyna
 
 /***/ }),
 
-/***/ 77:
+/***/ 89:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(49);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(34);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -97,10 +97,10 @@ var AppComponent = (function () {
     return AppComponent;
 }());
 AppComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_3" /* Component */])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_1" /* Component */])({
         selector: 'app-root',
-        template: __webpack_require__(135),
-        styles: [__webpack_require__(133)]
+        template: __webpack_require__(147),
+        styles: [__webpack_require__(145)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */]) === "function" && _a || Object])
 ], AppComponent);
@@ -110,15 +110,17 @@ var _a;
 
 /***/ }),
 
-/***/ 78:
+/***/ 90:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(75);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(49);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_component__ = __webpack_require__(77);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(58);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(34);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_material__ = __webpack_require__(86);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_platform_browser_animations__ = __webpack_require__(88);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_component__ = __webpack_require__(89);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -126,6 +128,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
 
 
 
@@ -139,15 +143,17 @@ var AppModule = (function () {
 AppModule = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["b" /* NgModule */])({
         declarations: [
-            __WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* AppComponent */]
+            __WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* AppComponent */]
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
             __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormsModule */],
-            __WEBPACK_IMPORTED_MODULE_3__angular_http__["a" /* HttpModule */]
+            __WEBPACK_IMPORTED_MODULE_3__angular_http__["a" /* HttpModule */],
+            __WEBPACK_IMPORTED_MODULE_4__angular_material__["a" /* MaterialModule */].forRoot(),
+            __WEBPACK_IMPORTED_MODULE_5__angular_platform_browser_animations__["a" /* BrowserAnimationsModule */]
         ],
         providers: [],
-        bootstrap: [__WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* AppComponent */]]
+        bootstrap: [__WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* AppComponent */]]
     })
 ], AppModule);
 
@@ -155,7 +161,7 @@ AppModule = __decorate([
 
 /***/ }),
 
-/***/ 79:
+/***/ 91:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -172,5 +178,5 @@ var environment = {
 
 /***/ })
 
-},[160]);
+},[199]);
 //# sourceMappingURL=main.bundle.js.map

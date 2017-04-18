@@ -1,0 +1,13 @@
+.app-toolbar-filler {
+    flex: 1 1 auto;
+}
+
+.example-card {
+    display: inline-block;
+    width: 400px;
+    margin: 15px;
+}
+
+.example-header-image {
+    background-image: url('https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAd2AAAAJGQ3MjMwZWU1LWU0MmItNGFiMS1iMzkyLTQ5N2U5NmU3MWE5NA.jpg'); background-size: cover;
+}
