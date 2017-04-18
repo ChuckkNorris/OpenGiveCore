@@ -13,7 +13,7 @@ namespace OpenGiveCore.Server.Entities.Organization
         [HttpGet]
         public IEnumerable<string> Get()
         {
-            return new string[] { "Hello", "From", "Api" };
+            return new string[] { "Hello", "From", "Api", "Derek", "Ari", "Patrick" };
         }
 
         // GET api/values/5
