@@ -1,9 +1,9 @@
 webpackJsonp([1,4],{
 
-/***/ 145:
+/***/ 146:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(51)();
+exports = module.exports = __webpack_require__(27)();
 // imports
 
 
@@ -18,14 +18,14 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 147:
+/***/ 148:
 /***/ (function(module, exports) {
 
 module.exports = "<md-toolbar color=\"primary\">\r\n    OpenGive App\r\n    <span class=\"app-toolbar-filler\"></span>\r\n    <button md-button>My Portfolio</button>\r\n    <button md-button>Browse</button>\r\n    <button md-button>Settings</button>\r\n</md-toolbar>\n\n<md-card *ngFor=\"let org of organizations\" class=\"example-card\">\r\n    <md-card-header>\r\n        <div md-card-avatar class=\"example-header-image\"></div>\r\n        <md-card-title>{{org}}</md-card-title>\r\n        <md-card-subtitle>Organization</md-card-subtitle>\r\n    </md-card-header>\r\n    <img md-card-image src=\"http://nextlevel-va.com/wordpress/wp-content/uploads/2015/08/portfolio-image.jpg\">\r\n    <md-card-content>\r\n        <p>\r\n            API says hey\r\n        </p>\r\n    </md-card-content>\r\n    <md-card-actions>\r\n        <button md-button>LIKE</button>\r\n        <button md-button>SHARE</button>\r\n    </md-card-actions>\r\n</md-card>\n\n\n"
 
 /***/ }),
 
-/***/ 199:
+/***/ 200:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(81);
@@ -73,7 +73,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dyna
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(34);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(35);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -99,8 +99,8 @@ var AppComponent = (function () {
 AppComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_1" /* Component */])({
         selector: 'app-root',
-        template: __webpack_require__(147),
-        styles: [__webpack_require__(145)]
+        template: __webpack_require__(148),
+        styles: [__webpack_require__(146)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */]) === "function" && _a || Object])
 ], AppComponent);
@@ -117,7 +117,7 @@ var _a;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(58);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(34);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(35);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_material__ = __webpack_require__(86);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_platform_browser_animations__ = __webpack_require__(88);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_component__ = __webpack_require__(89);
@@ -178,5 +178,5 @@ var environment = {
 
 /***/ })
 
-},[199]);
+},[200]);
 //# sourceMappingURL=main.bundle.js.map
