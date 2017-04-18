@@ -2,6 +2,15 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
 
+## Prerequisites
+Install [DotNetCore](https://www.microsoft.com/net/core)
+
+Install [Node Package Manager](https://nodejs.org/en/)
+
+Install Angular CLI
+
+`npm install --global @angular/cli`
+
 ## Development
 Run `dotnet restore` to restore the dependencies
 
