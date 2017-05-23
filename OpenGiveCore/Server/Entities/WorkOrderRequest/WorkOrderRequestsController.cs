@@ -9,7 +9,7 @@ using System.Text;
 
 namespace OpenGiveCore.Server.Entities
 {
-    [Route("api/[controller]")]
+    [Route("api/[controller]/[action]")]
     public class WorkOrderRequestsController : Controller
     {
 		private readonly LadotContext _context;
@@ -23,17 +23,34 @@ namespace OpenGiveCore.Server.Entities
 		/// </summary>
 		/// <returns>All work order requests</returns>
         [HttpGet]
-        public IEnumerable<WorkOrderRequest> Get()
+        public IEnumerable<WorkOrderRequest> GetAllWorkOrderRequests()
         {
            return _context.WorkOrderRequests.ToList();
         }
 
-        /// <summary>
+		[HttpPost]
+		public void ApproveWorkOrderRequest([FromBody]int workOrderRequestId)
+		{
+			var workOrder = _context.WorkOrderRequests.Find(workOrderRequestId);
+			workOrder.IsApproved = true;
+			_context.SaveChanges();
+		}
+
+		[HttpPost]
+		public void RejectWorkOrderRequest([FromBody]int workOrderRequestId)
+		{
+			var workOrder = _context.WorkOrderRequests.Find(workOrderRequestId);
+			workOrder.IsApproved = false;
+			_context.SaveChanges();
+		}
+		
+
+		/// <summary>
 		/// Saves a new work order request
 		/// </summary>
 		/// <param name="workOrderRequest">The work order request to save</param>
-        [HttpPost]
-        public async void Post([FromBody]WorkOrderRequest workOrderRequest)
+		[HttpPost]
+        public async void SaveNewWorkOrderRequest([FromBody]WorkOrderRequest workOrderRequest)
         {
 			_context.WorkOrderRequests.Add(workOrderRequest);
 			_context.SaveChanges();

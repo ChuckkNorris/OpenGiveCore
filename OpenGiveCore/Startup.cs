@@ -48,6 +48,7 @@ namespace OpenGiveCore
 			
 			loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
+			app.UseCors(cors => cors.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
 			app.Use(async (context, next) => {
 				await next();
 				if (context.Response.StatusCode == 404 &&

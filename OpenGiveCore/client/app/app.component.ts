@@ -33,7 +33,7 @@ export class AppComponent {
     submitWorkRequest() {
         console.log(this.workOrderRequest);
         
-        this._http.post('/api/WorkOrderRequests', this.workOrderRequest).subscribe(() => this.showSuccessMessage());
+        this._http.post('/api/WorkOrderRequests/SaveNewWorkOrderRequest', this.workOrderRequest).subscribe(() => this.showSuccessMessage());
     }
 
     showSuccessMessage() {
