@@ -11,3 +11,12 @@
 .example-header-image {
     background-image: url('https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAd2AAAAJGQ3MjMwZWU1LWU0MmItNGFiMS1iMzkyLTQ5N2U5NmU3MWE5NA.jpg'); background-size: cover;
 }
+
+.container {
+    padding: 20px;
+}
+
+h1 {
+    font-family: Roboto,"Helvetica Neue",sans-serif;
+    color: #3f51b5;
+}

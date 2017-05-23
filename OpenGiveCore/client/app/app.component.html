@@ -1,12 +1,36 @@
 <md-toolbar color="primary">
-    OpenGive App - Updated
+    LADOT
     <span class="app-toolbar-filler"></span>
-    <button md-button>My Portfolio</button>
-    <button md-button>Browse</button>
-    <button md-button>Settings</button>
+    <button md-button>Work Requests</button>
+    <!--<button md-button>Browse</button>
+    <button md-button>Settings</button>-->
 </md-toolbar>
+<div class="container">
+    <h1 style="text-align: center;">Submit Work Order Request</h1>
+<form (ngSubmit)="submitWorkRequest()" #workOrderForm="ngForm">
+    <div fxFlexLayout="row" fxLayoutGap="15px" fxLayoutAlign="center center" fxLayoutWrap="wrap">
+        <md-input-container fxFlex.lt-md="100" fxFlex.gt-sm="48">
+            <input [(ngModel)]="workOrderRequest.title" name="title" mdInput type="text" placeholder="Request Title">
+        </md-input-container>
+        <md-input-container fxFlex.lt-md="100" fxFlex.gt-sm="48">
+            <input mdInput [(ngModel)]="workOrderRequest.requestorEmail" name="email" type="email" placeholder="Email" required>
+        </md-input-container>
+       
+       
+    </div>
+    <div fxFlexLayout="row" fxLayoutAlign="center center">
+         <md-input-container fxFlex.lt-md="100" fxFlex.gt-sm="50">
+            <textarea [(ngModel)]="workOrderRequest.description" name="description" mdInput placeholder="Description" required></textarea>
+        </md-input-container>
+       
+    </div>
+    <div fxFlexLayout="row" fxLayoutAlign="center">
+      <button fxFlexAlign="center" md-raised-button color="accent">Submit Request</button>
+      </div>
+</form>
+</div>
 
-<md-card *ngFor="let org of organizations" class="example-card">
+<!--<md-card *ngFor="let org of organizations" class="example-card">
     <md-card-header>
         <div md-card-avatar class="example-header-image"></div>
         <md-card-title>{{org}}</md-card-title>
@@ -22,6 +46,6 @@
         <button md-button>LIKE</button>
         <button md-button>SHARE</button>
     </md-card-actions>
-</md-card>
+</md-card>-->
 
 
